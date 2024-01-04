@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anatoly-zh</title>
+</head>
+<script type="text/javascript">
+    var locations = new Array("group_01.jpg","group_02.jpg","group_03.jpg"  );
+    var locaut = new Array("group_4.jpg","group_5.jpg","group_6.jpg" ,"group_7.jpg","group_8.jpg" );
+    var locauts = new Array("group_k1.jpg","group_k2.jpg","group_k3.jpg" ,"group_k4.jpg" );
+    var currentIndex = {
+    "locations": 0,
+    "locaut": 0,
+    "locauts": 0
+};
+
+function nextImage(arrName, imgName) {
+    var arrImg = currentIndex[arrName];
+    currentIndex[arrName]++;
+    if (currentIndex[arrName] === arrImg.length) {
+        currentIndex[arrName] = 0;
+    }
+    document.images[imgName].src = window[arrName][currentIndex[arrName]];
+    return false;
+}
+</script>
+<body>
+    <h1>Образцы школьных фотографий</h1>
+    <h2>Групповые фотографии сделанные одним снимком</h2>
+       <p>Cтоимость таких групповых фотографий <strong>330 руб</strong>, размер <strong>
+        А4 (21х30) см</strong>, по умолчанию фотографии ламинируются.
+       </p>
+   
+    <img src="group_01.jpg" name="picture" width="1528" >
+    <br />
+        <input type="button" onclick="return nextImage('locations', 'picture')" value="Следующее изображение"/>
+    <hr align="middle" size="5" color="red" width="90%">  
+    <h2>Общие фотографии "виньетки"</h2>
+    <p>Cтоимость таких  фотографий <strong>400 руб</strong>, размер <strong></strong>
+        А4 (21х30) см</strong>, по умолчанию фотографии ламинируются.
+    </p>
+    <img src="group_4.jpg" name="picture2" width="1528" >
+    <br />
+    <input type="button" onclick="return nextImage('locaut','picture2')" value="Следующее изображение"/>
+    <hr align="middle" size="5" color="red" width="90%">
+    <h2>Групповые постановочные коллажи</h2>
+    <h3>Каждый ученик фотографируется отдельно в полный рост, далее все одноклассники собераются
+        на выбранном макете. У каждого ученика на груди есть номерок, который соответствует номеру в 
+        в списке класса.
+    </h3>
+    <p>Cтоимость таких  фотографий <strong>500 руб</strong>, размер <strong></strong>
+        А4 (21х30) см</strong>, по умолчанию фотографии ламинируются.
+    </p>
+    <img src="group_k1.jpg" name="picture3" width="1528" >
+    <br />
+    <input type="button" onclick="return nextImage('locauts','picture3')" value="Следующее изображение"/>
+   
+</body>
+</html>

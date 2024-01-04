@@ -1,0 +1,98 @@
+.container {
+    max-width: 1528px;
+    margin: auto;
+    background-color: #ddf2e3;
+}
+
+.obshie {
+    background-color: #f1f0a7;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-style: double;
+    border-color: #ac0f0f; 
+   
+}
+.titul {
+    font-style: bold;
+    font-size: large;
+    text-align: center;
+}
+body {
+  background-color: hsl(0, 0%, 92%); 
+  color: rgb(16, 16, 16);
+}
+h1 {
+    text-align: center;
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+h4 {
+
+    font-style: bold;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.vinetki {
+    background-color: #f1f0a7;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-style: double;
+    border-color: #ac0f0f; 
+   
+}
+input {
+    min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: hsl(171, 20%, 55%);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1cqi;
+  cursor: pointer;
+ 
+}
+.colaji {
+    background-color: #f1f0a7;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-style: double;
+    border-color: #ac0f0f;  
+}
+.portreti {
+    background-color: #f1f0a7;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-style: double;
+    border-color: #ac0f0f;     
+}
+.foto {
+    max-width: 1528px;
+    margin: auto;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+._button{
+    max-width: 1528px;
+    margin: auto;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: center;  
+}
